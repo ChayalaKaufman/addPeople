@@ -5,13 +5,15 @@
 <div class="jumbotron">
     <button id="add" class="btn btn-info">Add</button>
     <br />
-    <form id="form" method="post" action="/home/add">
-        <input type="text" placeholder="First Name" name="firstName" class="form-control" />
-        <br />
-        <input type="text" placeholder="Last Name" name="lastName" class="form-control" />
-        <br />
-        <input type="text" placeholder="Age" name="age" class="form-control" />
-        <br />
+    <form method="post" action="/home/add">
+        <div id="input">
+            <input type="text" placeholder="First Name" name="ppl[0].FirstName" class="form-control" />
+            <br />
+            <input type="text" placeholder="Last Name" name="ppl[0].LastName" class="form-control" />
+            <br />
+            <input type="text" placeholder="Age" name="ppl[0].Age" class="form-control" />
+            <br />
+        </div>
         <button class="btn btn-primary">Submit</button>
     </form>
 </div>
