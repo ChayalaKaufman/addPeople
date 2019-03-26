@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "AddPeople";
+}
+<div class="jumbotron">
+    <button id="add" class="btn btn-info">Add</button>
+    <br />
+    <form id="form" method="post" action="/home/add">
+        <input type="text" placeholder="First Name" name="firstName" class="form-control" />
+        <br />
+        <input type="text" placeholder="Last Name" name="lastName" class="form-control" />
+        <br />
+        <input type="text" placeholder="Age" name="age" class="form-control" />
+        <br />
+        <button class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+@section scripts {
+    <script src="/Scripts/index.js"></script>
+}
+
